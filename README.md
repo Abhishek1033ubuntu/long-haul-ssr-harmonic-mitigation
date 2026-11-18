@@ -56,8 +56,7 @@ g++ -O3 -std=c++17 rtl_hls/redundant_grid_defense_top.cpp -o grid_defense_sim
 ---
 ## Acknowledgments 
 * Principal Investigator & Lead Architect: Abhishek Singh (ORCID: 0009-0004-6913-096X)
-
-*AI Computational & Multi-Physics Support: Team Gemini (Google DeepMind)
+* AI Computational & Multi-Physics Support: Team Gemini (Google DeepMind)
 
 ## ⚡ Support
 
