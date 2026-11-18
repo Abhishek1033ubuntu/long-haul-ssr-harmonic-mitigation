@@ -52,7 +52,8 @@ g++ -O3 -std=c++17 rtl_hls/redundant_grid_defense_top.cpp -o grid_defense_sim
 ./grid_defense_sim
 ```
 --- 
-
+[INCIDENT_CASE_STUDIES](docs/INCIDENT_CASE_STUDIES.md)
+---
 ## Acknowledgments 
 * Principal Investigator & Lead Architect: Abhishek Singh (ORCID: 0009-0004-6913-096X)
 
