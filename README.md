@@ -36,8 +36,17 @@ Long-haul AC transmission corridors interfacing high penetrations of Inverter-Ba
 * `constraints/zcu102_grid_defense.xdc` &mdash; Physical pinout constraints for AMD ZCU102 FMC HPC1 optical gate drivers, PRP SFP+ cages, and cabinet maintenance key-switches.
 * `References.md` &mdash; Intellectual property and technical citation notice.
 
+--- 
+
 ## Quick Local Verification (GCC / Ubuntu)
 
 ```bash
 g++ -O3 -std=c++17 rtl_hls/redundant_grid_defense_top.cpp -o grid_defense_sim
 ./grid_defense_sim
+```
+--- 
+
+## Acknowledgments 
+Principal Investigator & Lead Architect: Abhishek Singh (ORCID: 0009-0004-6913-096X)
+
+AI Computational & Multi-Physics Support: Team Gemini (Google DeepMind)
