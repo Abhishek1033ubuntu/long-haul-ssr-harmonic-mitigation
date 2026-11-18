@@ -29,13 +29,19 @@ Long-haul AC transmission corridors interfacing high penetrations of Inverter-Ba
 
 ## Repository Structure
 
-* `docs/ARCHITECTURE_SPEC.md` &mdash; Full multi-tier scaling matrix (25 kVA to 765 kV), IEEE/CIGRE passivity criteria, material specs, and HIL commissioning protocol.
-* `rtl_hls/grid_defense_types.hpp` &mdash; Shared hardware data structures, per-unit scaling constants, and 4-node decoupling matrix definitions.
-* `rtl_hls/ekf_damping_core.hpp` &mdash; Pipelined 3-state decoupled <code>float32</code> EKF, Joseph-form covariance update, and Schmitt-trigger hysteresis latch.
-* `rtl_hls/redundant_grid_defense_top.cpp` &mdash; Top-level 4-node coordinator, optical gate-pulse PWM/TCSR modulator, IEC 62439-3 PRP dual-ring voter, and standalone C++ verification testbench.
-* `scripts/build_bitstream.tcl` &mdash; AMD Vitis HLS automated synthesis, RTL co-simulation, and IP catalog export script (200 MHz target).
-* `constraints/zcu102_grid_defense.xdc` &mdash; Physical pinout constraints for AMD ZCU102 FMC HPC1 optical gate drivers, PRP SFP+ cages, and cabinet maintenance key-switches.
-* `References.md` &mdash; Intellectual property and technical citation notice.
+## Detailed Repository Structure
+
+* **`notebooks/Grid_Defense_Interactive_Demo.ipynb`** &mdash; One-click Google Colab notebook providing live compilation, 15,000-cycle multi-contingency simulation, and high-resolution diagnostic plotting.
+* **`rtl_hls/grid_defense_types.hpp`** &mdash; Shared hardware data structures, per-unit scaling parameters, fixed-point/float32 definitions, and the 4-node cross-coupling bus matrix (**W**<sub>decouple</sub>).
+* **`rtl_hls/ekf_damping_core.hpp`** &mdash; Pipelined 3-state decoupled <code>float32</code> Extended Kalman Filter (EKF), Joseph-form covariance update matrix, Schmitt-trigger hysteresis latch (0.050 pu engage / 0.015 pu release), and independent raw-current crowbar comparator (&gt; 25 kA).
+* **`rtl_hls/redundant_grid_defense_top.cpp`** &mdash; Top-level 4-node distributed coordinator, optical gate-pulse PWM/TCSR modulator (2.0 &mu;s dead-time), IEC 62439-3 PRP dual-ring telemetry voter, hitless maintenance arbitrator, and standalone verification testbench.
+* **`testbench/verify_corridor_sim.py`** &mdash; Automated GCC compilation and verification runner executing the full test suite in a single command.
+* **`scripts/build_bitstream.tcl`** &mdash; AMD Vitis HLS automated synthesis, cycle-accurate RTL co-simulation, and IP catalog export script targeting the Zynq UltraScale+ ZU9EG @ 200 MHz.
+* **`constraints/zcu102_grid_defense.xdc`** &mdash; Physical pinout constraints for the AMD ZCU102 FMC HPC1 optical gate-drive transceivers, PRP SFP+ cages, and cabinet maintenance key-switches.
+* **`docs/ARCHITECTURE_SPEC.md`** &mdash; Comprehensive engineering specification covering multi-tier scaling (25 kVA to 765 kV), CIGRE/IEEE passivity compliance, and advanced material characteristics (Dia-SiC + graphene/Fe-Si-B).
+* **`docs/INCIDENT_CASE_STUDIES.md`** &mdash; Detailed international field-incident dossier (ERCOT, Hornsea One, BorWin1, Hami, Guyuan) with official grid operator investigation links.
+* **`docs/Long_Haul_SSR_Harmonic_Mitigation_Report_2026.pdf`** &mdash; Complete 5-page formal technical disclosure report authored by Abhishek Singh.
+* **`References.md`** &mdash; Intellectual property protection and citation notice.
 
 --- 
 
