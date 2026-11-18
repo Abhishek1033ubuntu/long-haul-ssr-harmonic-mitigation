@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, hardware architecture, or technical report, please cite it as below."
+authors:
+  - family-names: Singh
+    given-names: Abhishek
+    orcid: "https://orcid.org/0009-0004-6913-096X"
+title: "Active Impedance Modulation & Zero-Downtime AI Control for Long-Haul Transmission Harmonic & SSR Mitigation"
+version: 1.0.0
+date-released: 2026-11-01
+url: "https://github.com/Abhishek1033ubuntu/long-haul-ssr-harmonic-mitigation"
