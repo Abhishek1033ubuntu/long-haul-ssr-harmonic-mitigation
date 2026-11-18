@@ -3,7 +3,8 @@
 [![Lead Author](https://img.shields.io/badge/Lead%20Author-Abhishek%20Singh-1f4e78.svg)](https://orcid.org/0009-0004-6913-096X)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--6913--096X-a6ce39.svg)](https://orcid.org/0009-0004-6913-096X)
 [![AI Collaborator](https://img.shields.io/badge/AI%20Computational%20%26%20Multi--Physics%20Support-Team%20Gemini%20(Google%20DeepMind)-4285F4.svg)](#acknowledgments)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24350526-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.24350526) 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Abhishek1033ubuntu/long-haul-ssr-harmonic-mitigation/blob/main/notebooks/Grid_Defense_Interactive_Demo.ipynb)  
 
 ## Executive Overview
