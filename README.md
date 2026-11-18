@@ -41,7 +41,7 @@ Long-haul AC transmission corridors interfacing high penetrations of Inverter-Ba
 * **`scripts/build_bitstream.tcl`** &mdash; AMD Vitis HLS automated synthesis, cycle-accurate RTL co-simulation, and IP catalog export script targeting the Zynq UltraScale+ ZU9EG @ 200 MHz.
 * **`constraints/zcu102_grid_defense.xdc`** &mdash; Physical pinout constraints for the AMD ZCU102 FMC HPC1 optical gate-drive transceivers, PRP SFP+ cages, and cabinet maintenance key-switches.
 * **`docs/ARCHITECTURE_SPEC.md`** &mdash; Comprehensive engineering specification covering multi-tier scaling (25 kVA to 765 kV), CIGRE/IEEE passivity compliance, and advanced material characteristics (Dia-SiC + graphene/Fe-Si-B).
-* **`docs/INCIDENT_CASE_STUDIES.md`** &mdash; Detailed international field-incident dossier (ERCOT, Hornsea One, BorWin1, Hami, Guyuan) with official grid operator investigation links.
+* **`docs/INCIDENT_CASE_STUDIES.md`** &mdash; Detailed international field-incident dossier (ERCOT, Hornsea One, BorWin1, Hami, Guyuan) with official grid operator investigation links. [CLICK HERE](docs/INCIDENT_CASE_STUDIES.md)
 * **`docs/Long_Haul_SSR_Harmonic_Mitigation_Report_2026.pdf`** &mdash; Complete 5-page formal technical disclosure report authored by Abhishek Singh.
 * **`References.md`** &mdash; Intellectual property protection and citation notice.
 
@@ -53,8 +53,7 @@ Long-haul AC transmission corridors interfacing high penetrations of Inverter-Ba
 g++ -O3 -std=c++17 rtl_hls/redundant_grid_defense_top.cpp -o grid_defense_sim
 ./grid_defense_sim
 ```
---- 
-[INCIDENT_CASE_STUDIES](docs/INCIDENT_CASE_STUDIES.md)
+
 ---
 ## Acknowledgments 
 * Principal Investigator & Lead Architect: Abhishek Singh (ORCID: 0009-0004-6913-096X)
